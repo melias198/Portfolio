@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Elias - Backend Developer</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!--- profile icon-->
+  <link rel="shortcut icon" href="profile.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <!-- <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li> -->
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container" id="container">
+
+         <!-- Loaded from backend -->
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+              class="img-cover">
+
+            <img src="./assets/images/about-code.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
+              class="abs-img">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-python"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-html5"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content" id="about-content">
+
+            <!-- Loaded from backend -->
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section portfolio" id="projects">
+        <div class="container">
+
+          <p class="section-subtitle">Projects</p>
+          <h2 class="h2 section-title">My Latest Projects</h2>
+
+
+          <ul class="portfolio-list" id="portfolio-list">
+
+           <!-- Loaded from backend -->
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">Skills</p>
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+          <ul class="skills-list" id="skills-list">
+            
+            <!-- Loaded from backend -->
+            
+          </ul>
+
+          <h2 class="h2 section-title">Competitive Programming</h2>
+           <p class="section-text">
+            Participating regularly in contests to explore data structures and algorithms.
+          </p>
+          <div class="cp-cards-container" id="cp-container">
+            
+           <!-- Loaded from backend -->
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <p class="section-subtitle">Contact</p>
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Feel free to get in touch</p>
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form" id="contact-form">
+
+                <input type="text" name="name" id="contact-name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" id="contact-email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" id="contact-message" placeholder="Message" required class="contact-input"></textarea>
+
+                <p class="section-text" id="contact-error"></p>
+                <button type="submit" onclick="handlePostMessage(event)" class="btn-submit">Send Message</button>
+
+              </form>
+
+              <ul class="contact-list">
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Address</h3>
+
+                    <address class="contact-item-link">
+                      Chawkbazar, Chattogram, Bangladesh.
+                    </address>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <a href="mailto:meliash198@gmail.com" class="contact-item-link">meliash198@gmail.com</a>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Phone</h3>
+
+                    <a href="tel:01609458085" class="contact-item-link">01609-458085</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <!-- <section class="section blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Blogs</p>
+
+          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/cp.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Competitive Programming</a>
+
+                <h3 class="card-title">
+                  <a href="#">Competitive programming sharpens problem-solving skills through coding challenges and algorithmic tasks.</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/ai.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Power Of AI</a>
+
+                <h3 class="card-title">
+                  <a href="#">AI transforms industries with automation, intelligence, efficiency, and innovative solutions.</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/algo.jpg" width="1181" height="843" loading="lazy"
+                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
+                  </a>
+                </figure>
+
+                <a href="#" class="card-tag">Algorithms</a>
+
+                <h3 class="card-title">
+                  <a href="#">Algorithms efficiently solve problems through step-by-step logical procedures and calculations.</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2024 <a href="#" class="copyright-link">Elias</a>. All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <div class="social-links">
+          <a href="https://github.com/melias198" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mohammad-elias/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:meliash198@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/introduction.js"></script>
+  <script src="./assets/js/about.js"></script>
+  <script src="./assets/js/project.js"></script>
+  <script src="./assets/js/skill.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
